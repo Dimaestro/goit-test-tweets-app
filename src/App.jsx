@@ -7,7 +7,7 @@ function App() {
       <NavLink to='*'>Dima</NavLink>
       <NavLink to='/vite'>Vite</NavLink>
       <Routes>
-        <Route path='/' element={<div>Dima</div>} />
+        <Route path='*' element={<div>Dima</div>} />
         <Route path='/vite' element={<div>Vite</div>} />
      </Routes>
     </>
