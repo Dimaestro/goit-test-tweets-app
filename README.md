@@ -1,1 +1,0 @@
-# goit-test-tweets-app
