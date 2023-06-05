@@ -2,6 +2,7 @@
 @import '@fontsource/roboto/400.css';
 @import '@fontsource/roboto/500.css';
 @import '@fontsource/roboto/700.css';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
 
 html {
   box-sizing: border-box;
@@ -15,6 +16,8 @@ html {
   box-sizing: inherit;
 }
 body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
   margin: 0;
   background-color: #242526;
 }
