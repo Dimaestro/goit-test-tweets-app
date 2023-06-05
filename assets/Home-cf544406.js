@@ -1,0 +1,1 @@
+import{j as o}from"./index-6d762e9c.js";import{T as s,S as t,c as r}from"./ScrollButton.module-f568015a.js";const a=()=>o.jsxs(o.Fragment,{children:[o.jsx(s,{}),o.jsx(t,{className:r.scrollToTop,top:300,width:18,height:18,color:{fill:"aliceblue"},smooth:!0,style:{bottom:20,right:20,backgroundColor:"hsla(240, 4%, 11%, 0.521)"}})]});export{a as default};
