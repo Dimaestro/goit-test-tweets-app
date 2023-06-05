@@ -54,10 +54,9 @@
 
 .list {
   display: flex;
-  gap: 15px;
 }
 
-.listItem {
+.navLink {
   display: block;
   padding: 7px 14px;
   background-color: #1b1b1d;
@@ -78,36 +77,25 @@
   transition-property: border-color;
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
-.navLink {
   color: #ebd8ff;
 }
 
-.listItem:is(:hover) {
+.navLink:is(:hover) {
   border-color: #b97cfd;
-}
-
-.descItem {
-  display: none;
 }
 
 @media screen and (min-width: 768px) {
   .container {
     justify-content: center;
   }
+
   .titleContainer {
     margin: 0 auto;
     display: block;
   }
 
-  .mobileItem {
-    display: none;
-  }
-
-  .descItem {
+  .navLink {
     width: 150px;
-    display: block;
   }
 }
 

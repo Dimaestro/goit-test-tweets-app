@@ -1,9 +1,13 @@
 import { NavLink } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import css from './AppBar.module.css';
 import logo from '../../assets/Logo.svg';
 import clsx from 'clsx';
 
 const AppBar = () => {
+  const location = useLocation();
+  console.log(location);
+
   return (
     <div className={css.container}>
       <NavLink className={css.logo} to='/'>
@@ -14,11 +18,27 @@ const AppBar = () => {
       </div>
       <nav>
         <ul className={css.list}>
-          <li className={clsx(css.listItem, css.descItem)}>
-            <NavLink className={css.navLink} to="/tweets">show all</NavLink>
+          <li className={clsx(css.listItem, )}>
+            {location.pathname === '/' ? (
+              <>
+                <NavLink
+                  className={clsx(css.navLink)}
+                  to="/tweets"
+                  state={{ from: location }}
+                >
+                  all
+                </NavLink>
+              </>
+            ) : (
+              <NavLink className={css.navLink} to={location.state?.from} >Back</NavLink>
+            )}
+            
           </li>
-          <li className={clsx(css.listItem, css.mobileItem)}>
-            <NavLink className={css.navLink} to="/tweets">all</NavLink>
+          <li className={clsx(css.listItem, )}>
+            
+          </li>
+          <li className={clsx(css.listItem)}>
+            
           </li>
         </ul>
       </nav>

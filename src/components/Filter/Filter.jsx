@@ -13,7 +13,7 @@ const Filter = () => {
   const status = useSelector(selectStatusFilter)
 
   const handleChange = event => {
-    dispatch(setStatusFilter(event.target.value))
+    dispatch(setStatusFilter(event.target.value));
   };
 
   return (
