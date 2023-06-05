@@ -7,7 +7,7 @@ export const tweetsApi = createApi({
   refetchOnFocus: true,
   refetchOnReconnect: true, 
   endpoints: (builder) => ({
-    getTweets: builder.query({
+    getUserTweets: builder.query({
       query: () => `/tweets`,
       providesTags: (result) => {
         return result
@@ -35,4 +35,4 @@ export const tweetsApi = createApi({
   }),
 })
 
-export const { useGetTweetsQuery, useUpdateTweetsMutation } = tweetsApi;
+export const { useGetUserTweetsQuery, useUpdateTweetsMutation } = tweetsApi;

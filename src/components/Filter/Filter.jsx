@@ -1,6 +1,7 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { statusFilters } from '../../redux/filters/constants';
 import { setStatusFilter } from '../../redux/filters/filtersSlice';
+import { selectStatusFilter } from '../../redux/filters/selectors';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
@@ -9,13 +10,11 @@ import css from './Filter.module.css';
 
 const Filter = () => {
   const dispatch = useDispatch();
-  const status = useSelector(state => state.filter.status)
+  const status = useSelector(selectStatusFilter)
 
   const handleChange = event => {
     dispatch(setStatusFilter(event.target.value))
   };
-
-  console.log(status);
 
   return (
     <div className={css.container}>
@@ -30,8 +29,8 @@ const Filter = () => {
           onChange={handleChange}
         >
           <MenuItem className={css.item} value={statusFilters.all}>All</MenuItem>
-          <MenuItem className={css.item} value={statusFilters.active}>Active</MenuItem>
-          <MenuItem className={css.item} value={statusFilters.completed}>Completed</MenuItem>
+          <MenuItem className={css.item} value={statusFilters.followings}>Followings</MenuItem>
+          <MenuItem className={css.item} value={statusFilters.follow}>Follow</MenuItem>
         </Select>
       </FormControl>
     </div>

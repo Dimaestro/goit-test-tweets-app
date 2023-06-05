@@ -1,13 +1,13 @@
 import { NavLink } from 'react-router-dom';
 import css from './AppBar.module.css';
-import logo from '../../assets/Logo.svg'
+import logo from '../../assets/logo.svg'
 import clsx from 'clsx';
 
 const AppBar = () => {
   return (
     <div className={css.container}>
       <NavLink className={css.logo} to='/'>
-        <img src={logo}/>
+        <img src={logo} alt='logo' ></img>
       </NavLink>
       <div className={css.titleContainer}>
         <h2 className={css.title}>Popular Tweets</h2>

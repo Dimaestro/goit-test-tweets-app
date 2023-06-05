@@ -10,7 +10,7 @@ const followsSlice = createSlice({
       state.following.push(action.payload)
     },
     removeFollowing(state, action) {
-      const index = state.following.findIndex(item => item.id === action.payload)
+      const index = state.following.findIndex(item => item === action.payload)
       state.following.splice(index, 1);
     }
   }

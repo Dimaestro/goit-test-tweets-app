@@ -106,6 +106,10 @@
   background-color: #5cd3a8;
 }
 
+.button:disabled {
+  opacity: 0.9;
+}
+
 .buttonActive {
   background-color: #5cd3a8;
 }
