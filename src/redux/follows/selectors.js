@@ -1,0 +1,1 @@
+export const selectFollows = state => state.follows.following; 
