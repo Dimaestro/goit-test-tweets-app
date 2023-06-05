@@ -1,5 +1,7 @@
 # React Tweets App
 
+# [Git-hub pages](https://dimaestro.github.io/goit-test-tweets-app/)
+
 ## Front-end:
 
 #### React
@@ -32,7 +34,11 @@
 
 ---
 
+## Design
+
 ### [Figma template](<https://www.figma.com/file/cBGAURKe91CGNFWvXXBgrx/Test-(Copy)?type=design&t=dBs53yr11DmOeJ89-0>)
+
+---
 
 ### Getting Started
 
