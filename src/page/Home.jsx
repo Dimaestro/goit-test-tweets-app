@@ -9,12 +9,11 @@ const Home = () => {
       <ScrollToTop
         className={css.scrollToTop}
         top={300}
-
         width={18}
         height={18}
         color={{ fill: "aliceblue" }}
         smooth 
-        style={{bottom: 20, right: 20}}
+        style={{bottom: 20, right: 20, backgroundColor: "hsla(240, 4%, 11%, 0.521)"}}
       />
     </>
   )
