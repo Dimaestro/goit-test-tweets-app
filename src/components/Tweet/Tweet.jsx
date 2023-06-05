@@ -7,7 +7,7 @@ import { selectFollows } from '../../redux/follows/selectors';
 import clsx from 'clsx';
 import css from './Tweet.module.css'
 import PropTypes from 'prop-types';
-import logo from '../../assets/logo.svg';
+import logo from '../../assets/Logo.svg';
 import background from '../../assets/backgroundTweet.png';
 
 
