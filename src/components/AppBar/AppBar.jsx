@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import css from './AppBar.module.css';
-import logo from '../../assets/logo.svg'
+import logo from '../../assets/logo.svg';
 import clsx from 'clsx';
 
 const AppBar = () => {
