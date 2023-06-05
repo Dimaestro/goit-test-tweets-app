@@ -6,7 +6,6 @@ import clsx from 'clsx';
 
 const AppBar = () => {
   const location = useLocation();
-  console.log(location);
 
   return (
     <div className={css.container}>
