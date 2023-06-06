@@ -1,6 +1,6 @@
 import ScrollToTop from "react-scroll-to-top";
 import Tweets from "../components/Tweets/Tweets"
-import css from '../helpers/ScrollButton.module.css';
+import css from './ScrollButton.module.css';
 
 const Home = () => {
   return (

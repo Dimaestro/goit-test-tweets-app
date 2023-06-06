@@ -1,7 +1,7 @@
 import ScrollToTop from "react-scroll-to-top";
-import Filter from "../components/Filter/Filter";
+import Filter from "../components/filter/filter";
 import Tweets from "../components/Tweets/Tweets";
-import css from '../helpers/ScrollButton.module.css';
+import css from './ScrollButton.module.css';
 
 const TweetsPage = () => {
   return (
