@@ -1,5 +1,5 @@
 import ScrollToTop from "react-scroll-to-top";
-import Filter from "../components/filter/filter";
+import Filter from "../components/Filter/Filter";
 import Tweets from "../components/Tweets/Tweets";
 import css from './ScrollButton.module.css';
 
