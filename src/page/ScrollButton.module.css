@@ -1,13 +1,4 @@
 .scrollToTop {
-  border: 1px solid transparent;
-  border-radius: 50%;
-  fill: aliceblue;
-  color: #fff;
-  width: 45px;
-  height: 45px;
-  background-color: hsla(240, 4%, 11%, 0.521);
-  box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
-
   transition-property: border-color;
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -15,10 +6,6 @@
 
 .scrollToTop:is(:hover) {
   border-color: #b97cfd;
-}
-
-svg {
-  fill: #fff !important;
 }
 
 @media screen and (min-width: 768px) {
