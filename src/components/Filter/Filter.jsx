@@ -1,19 +1,26 @@
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { statusFilters } from '../../redux/filters/constants';
 import { setStatusFilter } from '../../redux/filters/filtersSlice';
-import { selectStatusFilter } from '../../redux/filters/selectors';
+import { useSearchParams } from 'react-router-dom';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import css from './Filter.module.css';
+import { useEffect } from 'react';
 
 const Filter = () => {
   const dispatch = useDispatch();
-  const status = useSelector(selectStatusFilter)
+  const [serchParams, setSerchParams] = useSearchParams();
+  const statusFilter = serchParams.get('status') ?? statusFilters.all
+
+  useEffect(() => {
+    dispatch(setStatusFilter(statusFilter));
+  },[])
 
   const handleChange = event => {
     dispatch(setStatusFilter(event.target.value));
+    setSerchParams({status: event.target.value});
   };
 
   return (
@@ -24,7 +31,7 @@ const Filter = () => {
           className={css.select}
           labelId="demo-simple-select-label"
           id="demo-simple-select"
-          value={status}
+          value={statusFilter}
           label="Age"
           onChange={handleChange}
         >
