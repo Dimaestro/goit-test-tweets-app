@@ -1,11 +1,13 @@
 import { NavLink } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
+import { useRef } from 'react';
 import css from './AppBar.module.css';
 import logo from '../../assets/Logo.svg';
 import clsx from 'clsx';
 
 const AppBar = () => {
   const location = useLocation();
+  const backLink = useRef(location.state?.from ?? '/')
 
   return (
     <div className={css.container}>
@@ -29,7 +31,7 @@ const AppBar = () => {
                 </NavLink>
               </>
             ) : (
-              <NavLink className={css.navLink} to={location.state?.from} >Back</NavLink>
+              <NavLink className={css.navLink} to={backLink.current} >Back</NavLink>
             )}
             
           </li>
